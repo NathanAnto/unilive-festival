@@ -5,10 +5,6 @@ import {
     Popover,
     PopoverButton,
     PopoverPanel,
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuItems,
 } from "@headlessui/react";
 import {
     Bars3Icon,
@@ -19,10 +15,6 @@ import HeaderLink from "./header-link";
 import { dropNavigation, navigation } from "@/app/lib/data";
 import { Nav } from "@/app/lib/definitions";
 import HeaderDropdownIcon from "./header-dropdown-icon";
-
-function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(" ");
-}
 
 export default function Header() {
     return (
@@ -80,7 +72,7 @@ export default function Header() {
                                                                             }
                                                                         ></HeaderDropdownIcon>
                                                                         {/* row details */}
-                                                                        <div>
+                                                                        <div className="mt-2">
                                                                             <a
                                                                                 href={navItem.href}
                                                                                 className='font-extrabold hover:text-yellow-200 text-gray-900 text-lg'
@@ -123,22 +115,7 @@ export default function Header() {
                     <DisclosurePanel className='md:hidden'>
                         <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
                             {navigation.map((item) => (
-                                <DisclosureButton
-                                    key={item.name}
-                                    as='a'
-                                    href={item.href}
-                                    aria-current={
-                                        item.current ? "page" : undefined
-                                    }
-                                    className={classNames(
-                                        item.current
-                                            ? "bg-gray-900 text-yellow-200"
-                                            : "text-gray-900 hover:bg-gray-900 hover:text-yellow-200",
-                                        "block rounded-md px-3 py-2 text-base font-extrabold"
-                                    )}
-                                >
-                                    {item.name}
-                                </DisclosureButton>
+                                <HeaderLink item={item}></HeaderLink>
                             ))}
                         </div>
                         <div className='border-t border-gray-700 pb-3 pt-4'>
@@ -159,7 +136,7 @@ export default function Header() {
                                                     <HeaderDropdownIcon
                                                         item={navItem}
                                                     ></HeaderDropdownIcon>
-                                                    <div className='mt-3.5 ml-2 group-hover:text-yellow-200'>
+                                                    <div className='mt-3 ml-2 group-hover:text-yellow-200'>
                                                         {navItem.name}
                                                     </div>
                                                 </DisclosureButton>
@@ -167,7 +144,7 @@ export default function Header() {
                                         ))}
                                     </>
                                 ))}
-                            </div>
+                            </div> 
                         </div>
                     </DisclosurePanel>
                 </Disclosure>
