@@ -19,7 +19,7 @@ import HeaderDropdownIcon from "./header-dropdown-icon";
 export default function Header() {
     return (
         <>
-            <div className='min-h-full shadow-lg p-2 bg-yellow-300 '>
+            <div className='min-h-full shadow-lg p-2 bg-[color:var(--primary)] '>
                 <Disclosure as='nav'>
                     <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
                         <div className='flex h-16 items-center justify-between'>
@@ -41,7 +41,7 @@ export default function Header() {
 
                                         {dropNavigation.map((item: Nav) => (
                                             <Popover className='relative'>
-                                                <PopoverButton className='inline-flex items-center text-gray-900 hover:bg-gray-900 hover:text-yellow-200 rounded-md px-3 py-2 text-sm font-extrabold'>
+                                                <PopoverButton className='inline-flex items-center text-black hover:bg-black hover:text-[color:var(--primary)] rounded-md px-3 py-2 text-sm font-extrabold'>
                                                     <span>{item.name}</span>
                                                     <ChevronDownIcon
                                                         aria-hidden='true'
@@ -53,7 +53,7 @@ export default function Header() {
                                                     transition
                                                     className='absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in'
                                                 >
-                                                    <div className='w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-yellow-300 text-sm/6 shadow-lg ring-1 ring-gray-900/5'>
+                                                    <div className='w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-[color:var(--primary)] text-sm/6 shadow-lg ring-1 ring-black/5'>
                                                         <div className='p-4'>
                                                             {item.dropdown?.map(
                                                                 (
@@ -64,7 +64,7 @@ export default function Header() {
                                                                         key={
                                                                             navItem.name
                                                                         }
-                                                                        className='group relative flex gap-x-6 gap-y-30 rounded-lg p-2 hover:bg-gray-900'
+                                                                        className='group relative flex gap-x-6 gap-y-30 rounded-lg p-2 hover:bg-black'
                                                                     >
                                                                         <HeaderDropdownIcon
                                                                             item={
@@ -75,7 +75,7 @@ export default function Header() {
                                                                         <div className="mt-2">
                                                                             <a
                                                                                 href={navItem.href}
-                                                                                className='font-extrabold hover:text-yellow-200 text-gray-900 text-lg'
+                                                                                className='font-extrabold hover:text-[color:var(--primary)] text-black text-lg'
                                                                             >
                                                                                 {navItem.name}
                                                                                 <span className='absolute inset-0' />
@@ -94,7 +94,7 @@ export default function Header() {
                             </div>
                             <div className='-mr-2 flex md:hidden'>
                                 {/* Mobile menu button */}
-                                <DisclosureButton className='group relative inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-yellow-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
+                                <DisclosureButton className='group relative inline-flex items-center justify-center rounded-md bg-black p-2 text-[color:var(--primary)] hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
                                     <span className='absolute -inset-0.5' />
                                     <span className='sr-only'>
                                         Open main menu
@@ -118,11 +118,11 @@ export default function Header() {
                                 <HeaderLink item={item}></HeaderLink>
                             ))}
                         </div>
-                        <div className='border-t border-gray-700 pb-3 pt-4'>
+                        <div className='border-t border-black pb-3 pt-4'>
                             <div className='mt-3 space-y-1 px-2'>
                                 {dropNavigation.map((item) => (
                                     <>
-                                        <div className='font-extrabold text-gray-900'>
+                                        <div className='font-extrabold text-black'>
                                             {item.name}
                                         </div>
                                         {item.dropdown?.map((navItem) => (
@@ -131,12 +131,12 @@ export default function Header() {
                                                     key={navItem.name}
                                                     as='a'
                                                     href={navItem.href}
-                                                    className='w-full inline-flex rounded-md px-3 py-2 text-base font-extrabold text-gray-900 group-hover:bg-gray-900 hover:text-black'
+                                                    className='w-full inline-flex rounded-md px-3 py-2 text-base font-extrabold text-black group-hover:bg-black hover:text-black'
                                                 >
                                                     <HeaderDropdownIcon
                                                         item={navItem}
                                                     ></HeaderDropdownIcon>
-                                                    <div className='mt-3 ml-2 group-hover:text-yellow-200'>
+                                                    <div className='mt-3 ml-2 group-hover:text-[color:var(--primary)]'>
                                                         {navItem.name}
                                                     </div>
                                                 </DisclosureButton>
