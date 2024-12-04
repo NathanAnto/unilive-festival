@@ -1,6 +1,5 @@
 "use client";
 
-import { navigation } from "@/app/lib/data";
 import { Nav } from "@/app/lib/definitions";
 import { usePathname } from "next/navigation";
 import HeaderDropdownIcon from "./header-dropdown-icon";
@@ -32,8 +31,6 @@ export default function HeaderLink({ item }: { item: Nav }) {
             </a>
         );
     } else {
-        console.log("has dropdown");
-        console.log(`${pathname} ?=? ${item.href}`);
         return (
             <DisclosureButton
                 key={item.name}
@@ -49,7 +46,7 @@ export default function HeaderLink({ item }: { item: Nav }) {
             >
                 {item.name}
                 {item.dropdown?.map((navItem) => (
-                    <div className='group w-full'>
+                    <div className='group w-full' key={`dropdown-${navItem}`}>
                         <DisclosureButton
                             key={navItem.name}
                             as='a'

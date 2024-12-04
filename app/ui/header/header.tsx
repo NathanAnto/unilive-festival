@@ -1,3 +1,5 @@
+import { dropNavigation, navigation } from "@/app/lib/data";
+import { Nav } from "@/app/lib/definitions";
 import {
     Disclosure,
     DisclosureButton,
@@ -12,11 +14,13 @@ import {
     XMarkIcon,
 } from "@heroicons/react/24/outline";
 import HeaderLink from "./header-link";
-import { dropNavigation, navigation } from "@/app/lib/data";
-import { Nav } from "@/app/lib/definitions";
 import HeaderDropdownIcon from "./header-dropdown-icon";
+import Image from "next/image";
 
 export default function Header() {
+    if(dropNavigation[0].dropdown)
+        console.log(typeof(dropNavigation[0].dropdown[0].icon))
+    
     return (
         <>
             <div className='min-h-full shadow-lg p-2 bg-[color:var(--primary)] '>
@@ -25,10 +29,11 @@ export default function Header() {
                         <div className='flex h-16 items-center justify-between'>
                             <div className='inline-flex default function Pagiex items-center'>
                                 <div className='shrink-0'>
-                                    <img
+                                    <Image
                                         alt='Festival Unilive'
                                         src='/logos/logo_unilive.png'
-                                        className='size-8'
+                                        width={50}
+                                        height={50}
                                     />
                                 </div>
                                 <div className='hidden md:block'>
@@ -36,11 +41,12 @@ export default function Header() {
                                         {navigation.map((item) => (
                                             <HeaderLink
                                                 item={item}
+                                                key={item.name}
                                             ></HeaderLink>
                                         ))}
 
                                         {dropNavigation.map((item: Nav) => (
-                                            <Popover className='relative'>
+                                            <Popover className='relative' key={item.name}>
                                                 <PopoverButton className='inline-flex items-center text-black hover:bg-black hover:text-[color:var(--primary)] rounded-md px-3 py-2 text-sm font-extrabold'>
                                                     <span>{item.name}</span>
                                                     <ChevronDownIcon
@@ -115,18 +121,20 @@ export default function Header() {
                     <DisclosurePanel className='md:hidden'>
                         <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
                             {navigation.map((item) => (
-                                <HeaderLink item={item}></HeaderLink>
+                                <HeaderLink
+                                    item={item}
+                                    key={item.name}
+                                ></HeaderLink>
                             ))}
                         </div>
                         <div className='border-t border-black pb-3 pt-4'>
-                            <div className='mt-3 space-y-1 px-2'>
+                            <div className='mt-3 space-y-1 px-2' key={`${dropNavigation}`}>
                                 {dropNavigation.map((item) => (
                                     <>
-                                        <div className='font-extrabold text-black'>
+                                        <div className='font-extrabold text-black' key={item.name}>
                                             {item.name}
-                                        </div>
-                                        {item.dropdown?.map((navItem) => (
-                                            <div className='group w-full'>
+                                            {item.dropdown?.map((navItem) => (
+                                            <div className='group w-full' key={`dropdown-${navItem}`}>
                                                 <DisclosureButton
                                                     key={navItem.name}
                                                     as='a'
@@ -135,13 +143,15 @@ export default function Header() {
                                                 >
                                                     <HeaderDropdownIcon
                                                         item={navItem}
+                                                        key={`icon-${navItem.name}`}
                                                     ></HeaderDropdownIcon>
-                                                    <div className='mt-3 ml-2 group-hover:text-[color:var(--primary)]'>
+                                                    <div className='mt-3 ml-2 group-hover:text-[color:var(--primary)]' key={`name-${navItem.name}`}>
                                                         {navItem.name}
                                                     </div>
                                                 </DisclosureButton>
                                             </div>
                                         ))}
+                                        </div>
                                     </>
                                 ))}
                             </div> 
