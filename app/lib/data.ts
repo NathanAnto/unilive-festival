@@ -5,13 +5,31 @@ import {
     UserCircleIcon,
     UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import { Nav } from "./definitions";
+import { Artist, Nav } from "./definitions";
 
 export const navigation: Nav[] = [
     { name: "Home", href: "/", current: true },
     { name: "Info", href: "/info", current: false },
     { name: "Partenaires", href: "/partenaires", current: false },
+    { name: "Archives", href: "/archives", current: false },
+    { name: "A propos", href: "/apropos", current: false },
 ];
+
+export const artists: Artist[] = [
+    {
+        name: "Artist 1",
+    },{
+        name: "Artist 2",
+    },{
+        name: "Artist 3",
+    },{
+        name: "Artist 4",
+    },{
+        name: "Artist 5",
+    },{
+        name: "Artist 6",
+    },
+]
 
 export const dropNavigation: Nav[] = [
     {

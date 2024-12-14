@@ -1,9 +1,12 @@
 import Artists from "../ui/home/artists";
+import PageTitle from "../ui/page-title";
 
 export default function Home() {
     return (
         <>
-            <div className="font-extrabold">Home page</div>
+            <PageTitle title="Festival Unilive" size={5} className="flex flex-row justify-center"></PageTitle>
+            <PageTitle title="Recap du festival" size={4} className="flex flex-row justify-center"></PageTitle>
+
             <Artists />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
