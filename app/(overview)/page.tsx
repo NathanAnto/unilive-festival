@@ -1,13 +1,21 @@
 import Artists from "../ui/home/artists";
+import Comitee from "../ui/home/commitee";
+import Countdown from "../ui/home/countdown";
+import RentScene from "../ui/home/rent-scene";
 import PageTitle from "../ui/page-title";
+import Title from "../ui/title";
 
 export default function Home() {
     return (
         <>
-            <PageTitle title="Festival Unilive" size={5} className="flex flex-row justify-center"></PageTitle>
-            <PageTitle title="Recap du festival" size={4} className="flex flex-row justify-center"></PageTitle>
+            <h1 className={`flex flex-row justify-center mb-4 text-5xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl dark:text-primary`} >
+                Festival Unilive
+            </h1>
+            {/* <Artists /> */}
+            <Countdown />
+            <RentScene />
+            <Comitee />
 
-            <Artists />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent consectetur at odio at tempus. In viverra velit sit
