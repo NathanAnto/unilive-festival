@@ -1,9 +1,9 @@
+'use client'
+
 import Artists from "../ui/home/artists";
 import Comitee from "../ui/home/commitee";
 import Countdown from "../ui/home/countdown";
 import RentScene from "../ui/home/rent-scene";
-import PageTitle from "../ui/page-title";
-import Title from "../ui/title";
 
 export default function Home() {
     return (

@@ -7,3 +7,7 @@ body {
   background: var(--base-100);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.drawer-side {
+  transition: transform 0.3s ease-in-out;
+}

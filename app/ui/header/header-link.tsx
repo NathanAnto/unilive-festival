@@ -51,7 +51,7 @@ export default function HeaderLink({ item }: { item: Nav }) {
                             key={navItem.name}
                             as='a'
                             href={navItem.href}
-                            className='w-full inline-flex rounded-md px-3 py-2 text-base font-extrabold text-black group-hover:bg-black hover:text-black'
+                            className='w-full inline-flex rounded-md px-3 py-2 text-base font-extrabold text-base-100 group-hover:bg-base-100 hover:text-base-100'
                         >
                             <HeaderDropdownIcon
                                 item={navItem}
