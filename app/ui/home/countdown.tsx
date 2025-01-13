@@ -33,7 +33,7 @@ export default function Countdown() {
     return (
         <>
             <h1
-                className={`flex flex-row justify-center mb-4 text-2xl sm:m-0 md:m-0 font-extrabold leading-none tracking-tight text-primary md:text-2xl lg:text-2xl dark:text-primary`}
+                className={`flex flex-row justify-center mb-4 text-3xl sm:m-0 md:m-0 font-extrabold leading-none tracking-tight text-primary md:text-3xl lg:text-3xl dark:text-primary`}
             >
                 {isClient ? "Unilive Édition 2025 dans:" : <div className="skeleton h-4 w-full"></div>}
             </h1>
