@@ -1,20 +1,21 @@
 import { navigation } from "@/app/lib/data";
 import HeaderLink from "./header-link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     return (
         <>
             <div className='navbar bg-primary'>
                 <div className='flex-1'>
-                    <a href='/'>
+                    <Link href='/'>
                         <Image
                             alt='Festival Unilive'
                             src='/logos/logo_unilive.png'
                             width={50}
                             height={50}
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className='flex-none text-base-100 hidden md:block'>
                     <ul className='menu menu-horizontal px-1'>

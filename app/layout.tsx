@@ -33,7 +33,9 @@ export default function RootLayout({
                 <div className='drawer drawer-end'>
                     <input id="main-drawer" type="checkbox" className="drawer-toggle" />
                     <DrawerSide />
-                    <DrawerContent children={children} />
+                    <DrawerContent>
+                        {children}
+                    </DrawerContent>
                 </div>
             </body>
         </html>

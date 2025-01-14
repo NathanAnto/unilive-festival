@@ -2,7 +2,6 @@
 
 import Artists from "../ui/home/artists";
 import Comitee from "../ui/home/commitee";
-import Countdown from "../ui/home/countdown";
 import Events from "../ui/home/events";
 import RentScene from "../ui/home/rent-scene";
 

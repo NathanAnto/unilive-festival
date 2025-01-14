@@ -1,13 +1,21 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+
+interface TimeLeft {
+    months: number;
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+}
 
 export default function Countdown() {
-    const targetDate: Date = new Date(2025,5,1,16,0,0,0);
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const targetDate: Date = useMemo(() => new Date(2025,5,1,16,0,0,0), []);
+    const [timeLeft, setTimeLeft] = useState<TimeLeft>({months: 0, days: 0, hours: 0, minutes: 0, seconds: 0});
     const [isClient, setIsClient] = useState(false)
 
-    function calculateTimeLeft() {
+    const calculateTimeLeft = useCallback(() =>{
         const now = new Date().getTime();
         let difference = targetDate.getTime() - now;
     
@@ -22,13 +30,13 @@ export default function Countdown() {
         const seconds = Math.floor((difference / 1000) % 60);
     
         return { months, days, hours, minutes, seconds };
-    }
+    }, [targetDate]);
 
     useEffect(() => {
         setIsClient(true)
         const timer = setInterval(() => setTimeLeft(calculateTimeLeft()), 1000);
         return () => clearInterval(timer);
-      }, []);
+      }, [calculateTimeLeft]);
 
     return (
         <>
