@@ -33,7 +33,7 @@ export default {
         mytheme: {
           "primary": "#ffff63",
           "primary-content": "#121217",
-          "secondary": "#A7CECB",
+          "secondary": "#ED2D5F",
           "accent": "#121217",
           "accent-content": "#ffff63",
           "neutral": "#fff", // text

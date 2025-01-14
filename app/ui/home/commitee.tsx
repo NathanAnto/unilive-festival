@@ -5,32 +5,20 @@ export default function Commitee() {
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("animate-fadeIn");
-                }
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
             },
             { threshold: 0.1 }
         );
 
-        if (ref.current) {
-            observer.observe(ref.current);
-        }
+        const elements = ref.current ? [ref.current] : [];
+        elements.forEach(el => observer.observe(el));
 
-        const elements = document.querySelectorAll(".animate-fadeIn");
-        elements.forEach((element) => {
-            element.classList.add("opacity-0");
-            setTimeout(() => {
-                element.classList.remove("opacity-0");
-                element.classList.add("animate-fadeIn");
-            }, 100); // Adjust the delay as needed
-        });
-
-        return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
-            }
-        };
+        return () => elements.forEach(el => observer.unobserve(el));
     }, []);
 
     return (
@@ -55,7 +43,7 @@ export default function Commitee() {
                 </div>
 
                 <div>
-                    <h1 className='text-5xl font-bold text-primary'>
+                    <h1 className='text-3xl sm:text-4xl font-bold text-primary'>
                         LE COMITÉ
                     </h1>
                     <p className='py-6'>
