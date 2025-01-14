@@ -22,9 +22,9 @@ export default function HeaderLink({ item }: { item: Nav }) {
                 aria-current={current ? "page" : undefined}
                 className={classNames(
                     current
-                        ? "text-[color:var(--primary)] bg-black"
-                        : "text-black hover:bg-black hover:text-[color:var(--primary)]",
-                    "block rounded-md px-3 py-2 text-sm font-extrabold"
+                        ? "btn-active"
+                        : "btn-outline",
+                    "btn btn-accent m-2"
                 )}
             >
                 {item.name}
@@ -39,8 +39,8 @@ export default function HeaderLink({ item }: { item: Nav }) {
                 aria-current={current ? "page" : undefined}
                 className={classNames(
                     current
-                        ? "text-[color:var(--primary)] bg-black"
-                        : "text-black hover:bg-black hover:text-[color:var(--primary)]",
+                        ? "text-primary bg-base-100 hover:bg-base-200"
+                        : "text-base-100 hover:bg-base-100 hover:text-primary",
                     "block rounded-md px-3 py-2 text-base font-extrabold"
                 )}
             >
@@ -51,12 +51,12 @@ export default function HeaderLink({ item }: { item: Nav }) {
                             key={navItem.name}
                             as='a'
                             href={navItem.href}
-                            className='w-full inline-flex rounded-md px-3 py-2 text-base font-extrabold text-black group-hover:bg-black hover:text-black'
+                            className='w-full inline-flex rounded-md px-3 py-2 text-base font-extrabold text-base-100 group-hover:bg-base-100 hover:text-base-100'
                         >
                             <HeaderDropdownIcon
                                 item={navItem}
                             ></HeaderDropdownIcon>
-                            <div className='mt-3.5 ml-2 group-hover:text-[color:var(--primary)]'>
+                            <div className='mt-3.5 ml-2 group-hover:text-primary'>
                                 {navItem.name}
                             </div>
                         </DisclosureButton>

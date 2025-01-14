@@ -1,5 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+export type TitleProps = {
+    title: string;
+    subtitle?: string;
+    textColor?: string; // Text color for the header
+    className?: string; // Additional custom classes
+}
+
 export type Nav = {
     name: string,
     href: string,
