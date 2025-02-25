@@ -23,7 +23,7 @@ export default function SceneFAE() {
     }, []);
 
     return (
-        <div className='hero bg-base-200 min-h-[50vh]'>
+        <div className='hero bg-base-200 min-h-[25vh]'>
             <div
                 ref={ref}
                 className='hero-content flex-col lg:flex-row opacity-0'
