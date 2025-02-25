@@ -23,7 +23,7 @@ export default function RentScene() {
     
 
     return (
-        <div className='hero bg-base-200 min-h-screen'>
+        <div className='hero bg-base-200 min-h-[50vh]'>
             <div ref={ref} className='hero-content flex-col lg:flex-row-reverse opacity-0'>
                 <img
                     src='images/scene-tech.png'
@@ -37,9 +37,11 @@ export default function RentScene() {
                     <p className='py-6'>
                         On offre la possibilité de louer et de monter la scène. Vous pouvez voir nos scènes disponibles ci dessous. Pour plus d&apos;informations, contactez-nous par email !
                     </p>
-                    <button className='btn btn-primary animate-bounce'>
-                        Voir les scènes disponibles
-                    </button>
+                    <a href="/info#scenes">
+                        <button className='btn btn-primary animate-bounce'>
+                            Voir les scènes disponibles
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@ export default function Commitee() {
     }, []);
 
     return (
-        <div className='hero bg-base-200 min-h-screen'>
+        <div className='hero bg-base-200 min-h-[50vh]'>
             <div ref={ref} className='hero-content flex-col lg:flex-row opacity-0'>
                 <div className='max-w-lg mx-auto bg-base-200 rounded-lg shadow-lg'>
                     <video
@@ -49,7 +49,9 @@ export default function Commitee() {
                     <p className='py-6'>
                         Voila une petite vidéo de présentation de notre comité !
                     </p>
-                    <button className='btn btn-primary animate-bounce'>Équipe Unilive</button>
+                    <a href="/apropos/comite">
+                        <button className='btn btn-primary animate-bounce'>Équipe Unilive</button>
+                    </a>
                 </div>
             </div>
         </div>

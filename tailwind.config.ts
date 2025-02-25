@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Noto Sans", "Helvetica", "Arial", "Lucida", "sans-serif"]
+        
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -31,17 +35,17 @@ export default {
     themes: [
         {
         mytheme: {
-          "primary": "#ffff63",
+          "primary": "#FCF048", // "#ffff63",
           "primary-content": "#121217",
           "secondary": "#ED2D5F",
           "accent": "#121217",
           "accent-content": "#ffff63",
           "neutral": "#fff", // text
-          "base-100": "#121217", // background          
+          "base-100": "#000", // "#121217", // background          
           "info": "#0891b2",                    
           "success": "#00ff00",                    
-          "warning": "#f97316",                   
-          "error": "#ef4444",
+          "warning": "#121217",                   
+          "error": "#ED2D5F",
         },
       }
     ],
