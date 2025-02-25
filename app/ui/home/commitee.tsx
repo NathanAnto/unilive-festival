@@ -22,7 +22,7 @@ export default function Commitee() {
     }, []);
 
     return (
-        <div className='hero bg-base-200 min-h-screen'>
+        <div className='hero bg-base-200 min-h-[50vh]'>
             <div ref={ref} className='hero-content flex-col lg:flex-row opacity-0'>
                 <div className='max-w-lg mx-auto bg-base-200 rounded-lg shadow-lg'>
                     <video

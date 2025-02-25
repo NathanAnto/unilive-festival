@@ -7,22 +7,28 @@ import SceneTech from "../ui/info/scene-tech";
 
 export default function Info() {
     return (
-        <>
-            <h1 className='flex flex-row justify-center mb-4 text-5xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl dark:text-primary'>
-                Info Pratiques
-            </h1>
+        <div>
+            <div className="relative">
+                <video src="/videos/intro.mp4"
+                    autoPlay loop muted
+                    className="w-full h-screen object-cover sticky top-0 left-0 -z-10">
+                </video>
+                <h1 className="flex flex-row justify-center py-24 mt-32 text-5xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl">
+                    Info Pratiques
+                </h1>
+            </div>
 
             <Countdown />
 
             <div className='chat chat-end'>
                 <div className='chat-bubble chat-bubble-secondary'>
-                    Où et quand aura lieu le festival?
+                    Où et quand aura lieu le festival ?
                 </div>
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Le festival aura lieu le 1er mai 2025 sur l’espanade
-                    d’Internef sur le campus de l’université de lausanne.
+                    Le festival aura lieu le 1er mai 2025 sur l'espanade
+                    d'Internef sur le campus de l'université de lausanne.
                 </div>
             </div>
 
@@ -49,15 +55,15 @@ export default function Info() {
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    L’entrée au festival Unilive est gratuite, et il n’y a pas
+                    L'entrée au festival Unilive est gratuite, et il n'y a pas
                     besoin de billets non plus!
                 </div>
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Vous recevrez à l’entrée des bracelets cashless (coût
-                    d’activation de 5fr) pour payer les consommations à
-                    l’intérieur du festival grâce à ce bracelet.
+                    Vous recevrez à l'entrée des bracelets cashless (coût
+                    d'activation de 5fr) pour payer les consommations à
+                    l'intérieur du festival grâce à ce bracelet.
                 </div>
             </div>
             <div className='chat chat-start'>
@@ -69,8 +75,7 @@ export default function Info() {
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Retrouvez toutes les informations liées au cashless{" "}
-                    <Link
+                    Retrouvez toutes les informations liées au cashless <Link
                         href='/cashless'
                         className='text-secondary hover:underline'
                     >
@@ -83,7 +88,7 @@ export default function Info() {
 
             <div className='chat chat-end'>
                 <div className='chat-bubble chat-bubble-secondary'>
-                    Est-ce que des navettes sont prévues
+                    Est-ce que des navettes sont prévues ?
                 </div>
             </div>
             <div className='chat chat-start'>
@@ -95,13 +100,13 @@ export default function Info() {
                         <li>Renens-Gare (TL 32)</li>
                         <li>Galicien (TL 17)</li>
                     </ul>
-                    toutes les 15 minutes a partir de 00h15 et jusqu’a 1h30.
+                    toutes les 15 minutes a partir de 00h15 et jusqu'a 1h30.
                 </div>
             </div>
 
             <div className='chat chat-end'>
                 <div className='chat-bubble chat-bubble-secondary'>
-                    Y a-t-il des objets interdits
+                    Y a-t-il des objets interdits ?
                 </div>
             </div>
             <div className='chat chat-start'>
@@ -119,8 +124,7 @@ export default function Info() {
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Retrouvez la liste des objets interdits{" "}
-                    <Link
+                    Retrouvez la liste des objets interdits <Link
                         href='/objetsinterdits'
                         className='text-secondary hover:underline'
                     >
@@ -137,14 +141,14 @@ export default function Info() {
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Tous les parkings de l’UNIL sont également disponibles,
+                    Tous les parkings de l'UNIL sont également disponibles,
                     excepté <b>Chamberonne 1</b> et une partie de{" "}
                     <b>Chamberonne 2</b>
                 </div>
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Un parking vélo sera disponible à côté de l’entrée du
+                    Un parking vélo sera disponible à côté de l'entrée du
                     festival, sur le parking <b>Chamberonne 2</b>.
                 </div>
             </div>
@@ -155,6 +159,6 @@ export default function Info() {
 
             <SceneFAE />
             <SceneTech />
-        </>
+        </div>
     );
 }

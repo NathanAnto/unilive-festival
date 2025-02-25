@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export default function SceneFAE() {
@@ -22,7 +23,7 @@ export default function SceneFAE() {
     }, []);
 
     return (
-        <div className='hero bg-base-200 min-h-screen'>
+        <div className='hero bg-base-200 min-h-[50vh]'>
             <div
                 ref={ref}
                 className='hero-content flex-col lg:flex-row opacity-0'
@@ -38,9 +39,14 @@ export default function SceneFAE() {
                     </h1>
                     <p className='py-6'>
                         La scène FAE se trouve sur le parking Chamberonne 1 à
-                        l’est du bâtiment Anthropole. Elle est nommée après la
-                        Fédération des associations d’étudiant·e·x·s de
-                        l’Université de Lausanne. Chaque faculté possède sa
+                        l’est du bâtiment Anthropole. Elle est nommée après la <Link
+                            href='https://fae-unil.ch/'
+                            className='text-secondary hover:underline'
+                        >
+                            Fédération des associations d’étudiant·e·x·s de
+                            l’Université de Lausanne
+                        </Link>.
+                        Chaque faculté possède sa
                         (ses) association(s) d’étudiant·e·x·s et celles-ci se
                         sont regroupées en une fédération pour défendre et
                         représenter les étudiant·e·x·s au niveau de l’Université

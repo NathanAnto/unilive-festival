@@ -3,25 +3,53 @@ import { useEffect, useRef } from "react";
 interface ArtistsProps {
     name: string;
     image: string;
-    genre: string;
 }
 
 export default function Artists() {
     const artists: ArtistsProps[] = [
         {
-            name: 'Artiste 1',
-            image: 'images/artists/PoissonChat_JPM_Unilive2024_web21.jpg',
-            genre: 'Genre musical'
+            name: 'Faustine',
+            image: 'images/artists/faustine.jpg',
         },
         {
-            name: 'Artiste 2',
-            image: 'images/artists/E02A3395-scaled.jpg',
-            genre: 'Genre musical'
+            name: 'The Lady O',
+            image: 'images/artists/theladyo.jpeg',
         },
         {
-            name: 'Artiste 3',
-            image: 'images/artists/E02A1450-scaled.jpg',
-            genre: 'Genre musical'
+            name: 'MidNight One',
+            image: 'images/artists/midnightone.jpeg',
+        },
+        {
+            name: 'ASed',
+            image: 'images/artists/ased.jpg',
+        },
+        {
+            name: 'We Are INTERVIEW',
+            image: 'images/artists/weareinterview.jpg',
+        },
+        {
+            name: 'Isia',
+            image: 'images/artists/isia.jpg',
+        },
+        {
+            name: 'Lily Gasc',
+            image: 'images/artists/lilygasc.jpg',
+        },
+        {
+            name: 'Mindless Crowd',
+            image: 'images/artists/mindlesscrowd.jpg',
+        },
+        {
+            name: 'Léane',
+            image: 'images/artists/leane.jpg',
+        },
+        {
+            name: 'Diosmos',
+            image: 'images/artists/diosmos.jpg',
+        },
+        {
+            name: 'SPBK',
+            image: 'images/artists/spbk.jpg',
         }
     ];
 
@@ -47,7 +75,7 @@ export default function Artists() {
 
     return (
         <>
-            <div className="hero bg-base-200 min-h-screen">
+            <div className="hero bg-base-200 min-h-screen -z-10">
                 <div ref={ref} className="hero-content text-center opacity-0">
                     <div className="max-w-6xl">
                         <h2 className="text-5xl font-bold text-primary mb-8">Nos Artistes</h2>
@@ -62,7 +90,6 @@ export default function Artists() {
                                     </figure>
                                     <div className="card-body text-base-100">
                                         <h3 className="card-title justify-center">{artist.name}</h3>
-                                        <p>{artist.genre}</p>
                                     </div>
                                 </div>
                             ))}

@@ -11,7 +11,7 @@ export default function Header() {
                     <Link href='/'>
                         <Image
                             alt='Festival Unilive'
-                            src='/logos/logo_unilive.png'
+                            src='/images/logos/logo_unilive.jpg'
                             width={50}
                             height={50}
                         />
