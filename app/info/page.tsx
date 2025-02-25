@@ -29,8 +29,8 @@ export default function Info() {
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Le festival aura lieu le 1er mai 2025 sur l'espanade
-                    d'Internef sur le campus de l'université de lausanne.
+                    Le festival aura lieu le 1er mai 2025 sur l&apos;espanade
+                    d&apos;Internef sur le campus de l&apos;université de lausanne.
                 </div>
             </div>
 
@@ -52,20 +52,20 @@ export default function Info() {
 
             <div className='chat chat-end'>
                 <div className='chat-bubble chat-bubble-secondary'>
-                    Comment sera l'entrée du festival ?
+                    Comment sera l&apos;entrée du festival ?
                 </div>
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    L'entrée au festival Unilive est gratuite, et il n'y a pas
+                    L&apos;entrée au festival Unilive est gratuite, et il n&apos;y a pas
                     besoin de billets non plus!
                 </div>
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Vous recevrez à l'entrée des bracelets cashless (coût
-                    d'activation de 5fr) pour payer les consommations à
-                    l'intérieur du festival grâce à ce bracelet.
+                    Vous recevrez à l&apos;entrée des bracelets cashless (coût
+                    d&apos;activation de 5fr) pour payer les consommations à
+                    l&apos;intérieur du festival grâce à ce bracelet.
                 </div>
             </div>
             <div className='chat chat-start'>
@@ -102,7 +102,7 @@ export default function Info() {
                         <li>Renens-Gare (TL 32)</li>
                         <li>Galicien (TL 17)</li>
                     </ul>
-                    toutes les 15 minutes a partir de 00h15 et jusqu'a 1h30.
+                    toutes les 15 minutes a partir de 00h15 et jusqu&apos;a 1h30.
                 </div>
             </div>
 
@@ -143,14 +143,14 @@ export default function Info() {
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Tous les parkings de l'UNIL sont également disponibles,
-                    excepté <b>Chamberonne 1</b> et une partie de{" "}
+                    Tous les parkings de l&apos;UNIL sont également disponibles,
+                    excepté <b>Chamberonne 1</b> et une partie de
                     <b>Chamberonne 2</b>
                 </div>
             </div>
             <div className='chat chat-start'>
                 <div className='chat-bubble chat-bubble-primary'>
-                    Un parking vélo sera disponible à côté de l'entrée du
+                    Un parking vélo sera disponible à côté de l&apos;entrée du
                     festival, sur le parking <b>Chamberonne 2</b>.
                 </div>
             </div>

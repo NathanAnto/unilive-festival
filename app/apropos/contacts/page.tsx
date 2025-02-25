@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function Contacts() {
     return (
         <>
             <div className="breadcrumbs text-sm">
                 <ul>
-                    <li><a href="/">Unilive</a></li>
-                    <li><a href="/apropos">A propos</a></li>
+                    <li><Link href="/">Unilive</Link></li>
+                    <li><Link href="/apropos">A propos</Link></li>
                     <li>Contacts</li>
                 </ul>
             </div>
@@ -26,7 +28,7 @@ export default function Contacts() {
                 <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform">
                     <div className="card-body">
                         <h2 className="card-title text-2xl text-primary">Logistique</h2>
-                        <p className="text-lg">Questions sur l'organisation du festival ?</p>
+                        <p className="text-lg">Questions sur l&apos;organisation du festival ?</p>
                         <a href="mailto:logistique@unilive.ch" className="link link-primary text-xl">
                             logistique@unilive.ch
                         </a>
@@ -36,7 +38,7 @@ export default function Contacts() {
                 <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform">
                     <div className="card-body">
                         <h2 className="card-title text-2xl text-primary">Recrutement</h2>
-                        <p className="text-lg">Envie de rejoindre l'équipe ?</p>
+                        <p className="text-lg">Envie de rejoindre l&apos;équipe ?</p>
                         <a href="mailto:recrutement@unilive.ch" className="link link-primary text-xl">
                             recrutement@unilive.ch
                         </a>

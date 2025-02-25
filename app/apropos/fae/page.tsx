@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function FAE() {
     return (
         <>
             <div className="breadcrumbs text-sm">
                 <ul>
-                    <li><a href="/">Unilive</a></li>
-                    <li><a href="/apropos">A propos</a></li>
+                    <li><Link href="/">Unilive</Link></li>
+                    <li><Link href="/apropos">A propos</Link></li>
                     <li>La FAE</li>
                 </ul>
             </div>
@@ -20,13 +22,13 @@ export default function FAE() {
                     />
                     <div className="backdrop-blur-sm bg-base-200/50 p-6 rounded-xl">
                         <h2 className="text-2xl sm:text-4xl font-bold text-primary mb-6">
-                            Qu'est-ce que la FAE ?
+                            Qu&apos;est-ce que la FAE ?
                         </h2>
                         <p className="py-4 text-sm md:text-md">
-                            La FAE (Fédération des Associations d'Étudiant·e·x·s de l'UNIL) est l'organe représentatif des étudiant·e·x·s auprès de la Direction de l'université. Elle défend leurs droits et intérêts en participant activement aux commissions consultatives.
+                            La FAE (Fédération des Associations d&apos;Étudiant·e·x·s de l&apos;UNIL) est l&apos;organe représentatif des étudiant·e·x·s auprès de la Direction de l&apos;université. Elle défend leurs droits et intérêts en participant activement aux commissions consultatives.
                         </p>
                         <p className="py-4 text-sm md:text-md">
-                            Au-delà de son rôle de représentation, la FAE coordonne les associations facultaires et promeut l'égalité et la durabilité sur le campus.
+                            Au-delà de son rôle de représentation, la FAE coordonne les associations facultaires et promeut l&apos;égalité et la durabilité sur le campus.
                         </p>
                     </div>
                 </div>
@@ -41,7 +43,7 @@ export default function FAE() {
                         <ul className="list-none space-y-4 text-sm md:text-md">
                             <li className="flex items-center gap-2">
                                 <span className="text-primary">✦</span>
-                                L'agenda FAE en début d'année académique
+                                L&apos;agenda FAE en début d&apos;année académique
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-primary">✦</span>
@@ -49,7 +51,7 @@ export default function FAE() {
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-primary">✦</span>
-                                La Commission d'Aide aux Recours Estudiantins (CARE)
+                                La Commission d&apos;Aide aux Recours Estudiantins (CARE)
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-primary">✦</span>
@@ -72,10 +74,10 @@ export default function FAE() {
                             Partenariat FAE & Unilive
                         </h2>
                         <p className="py-4 text-sm md:text-md">
-                            Depuis la création du festival, la FAE est le premier partenaire d'Unilive. Les deux associations partagent des valeurs communes comme l'égalité, le partage et la durabilité. Le soutien financier et logistique de la FAE a été crucial pour le développement du festival.
+                            Depuis la création du festival, la FAE est le premier partenaire d&apos;Unilive. Les deux associations partagent des valeurs communes comme l&apos;égalité, le partage et la durabilité. Le soutien financier et logistique de la FAE a été crucial pour le développement du festival.
                         </p>
                         <p className="py-4 text-sm md:text-md">
-                            Ce partenariat s'est renforcé au fil des années, donnant naissance à des événements co-organisés comme la distribution de vin chaud et la soirée "Before Unilive". En reconnaissance de ce partenariat, une des scènes principales du festival porte fièrement le nom de "Scène FAE".
+                            Ce partenariat s&apos;est renforcé au fil des années, donnant naissance à des événements co-organisés comme la distribution de vin chaud et la soirée &quot;Before Unilive&quot;. En reconnaissance de ce partenariat, une des scènes principales du festival porte fièrement le nom de &quot;Scène FAE&quot;.
                         </p>
                     </div>
                 </div>

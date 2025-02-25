@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function Association() {
     return (
         <>
             <div className="breadcrumbs text-sm">
                 <ul>
-                    <li><a href="/">Unilive</a></li>
-                    <li><a href="/apropos">A propos</a></li>
+                    <li><Link href="/">Unilive</Link></li>
+                    <li><Link href="/apropos">A propos</Link></li>
                     <li>But du festival</li>
                 </ul>
             </div>
@@ -24,7 +26,7 @@ export default function Association() {
                             Une programmation ouverte et originale
                         </h2>
                         <p className="py-4 text-sm md:text-lg">
-                            Le but? Favoriser et faire découvrir des artistes de la scène helvétique tout en établissant une programmation variée et équilibrée répondant à la diversité étudiante. Encourager la production artistique des étudiant.e.x.s lausannois.e.x.s ainsi qu'offrir une plateforme de libre expression et de partage d'expériences culturelles.
+                            Le but? Favoriser et faire découvrir des artistes de la scène helvétique tout en établissant une programmation variée et équilibrée répondant à la diversité étudiante. Encourager la production artistique des étudiant.e.x.s lausannois.e.x.s ainsi qu&apos;offrir une plateforme de libre expression et de partage d&apos;expériences culturelles.
                         </p>
                     </div>
                 </div>
@@ -40,13 +42,13 @@ export default function Association() {
                     />
                     <div className="backdrop-blur-sm bg-base-100/50 p-6 rounded-xl">
                         <h2 className="text-2xl sm:text-4xl font-bold text-primary mb-6">
-                            Un événement propre à l'Université de Lausanne
+                            Un événement propre à l&apos;Université de Lausanne
                         </h2>
                         <p className="py-4 text-sm md:text-lg">
-                            Nous cherchons à collaborer en priorité avec les associations étudiantes et l'Université afin d'enrichir la vie culturelle des étudiant.e.x.s sans concurrencer des événements déjà existants. Ceci nous permet de profiter au mieux du campus idyllique offert par l'Université, le mettre en valeur et le respecter.
+                            Nous cherchons à collaborer en priorité avec les associations étudiantes et l&apos;Université afin d&apos;enrichir la vie culturelle des étudiant.e.x.s sans concurrencer des événements déjà existants. Ceci nous permet de profiter au mieux du campus idyllique offert par l&apos;Université, le mettre en valeur et le respecter.
                         </p>
                         <p className="py-4 text-sm md:text-lg">
-                            En plus de s'adresser aux étudiant.e.x.s de toutes les facultés, Unilive souhaite attirer le soir du festival le personnel de toute l'université, afin de devenir un des événements-phares de la vie du campus.
+                            En plus de s&apos;adresser aux étudiant.e.x.s de toutes les facultés, Unilive souhaite attirer le soir du festival le personnel de toute l&apos;université, afin de devenir un des événements-phares de la vie du campus.
                         </p>
                     </div>
                 </div>
@@ -67,7 +69,7 @@ export default function Association() {
                         <ul className="list-none space-y-4 text-sm md:text-md">
                             <li className="flex items-center gap-2">
                                 <span className="text-primary">✦</span>
-                                Faire fonctionner l'organisation uniquement sur le principe du bénévolat
+                                Faire fonctionner l&apos;organisation uniquement sur le principe du bénévolat
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-primary">✦</span>
@@ -88,7 +90,7 @@ export default function Association() {
 
             <div className="flex justify-center py-12">
                 <a href="https://www.unilive.ch/wp-content/uploads/2020/11/Unilive_Statuts_31.10.2019.pdf" className="btn btn-primary btn-md md:btn-lg hover:scale-105 transition-transform">
-                    Consulter les statuts de l'association
+                    Consulter les statuts de l&apos;association
                 </a>
             </div>
         </>

@@ -40,7 +40,7 @@ export default function Cashless() {
                         <ul className="list-disc list-inside">
                             <li>Recharger votre bracelet pendant le festival via le lien ci-dessus ou avec les QR code fast top up présent partout au festival.</li>
                             <li>Enregistrer votre moyen de paiement pour un rechargement plus rapide</li>
-                            <li>Consulter le solde de votre compte et l’historique des transactions</li>
+                            <li>Consulter le solde de votre compte et l&apos;historique des transactions</li>
                             <li>Bloquer votre bracelet et en obtenir un nouveau en cas de perte ou de vol</li>
                             <li>Obtenir le remboursement du solde de votre compte à la fin du festival</li>
                         </ul>
@@ -52,22 +52,22 @@ export default function Cashless() {
                         Comment recharger mon bracelet?
                     </div>
                     <div className="collapse-content bg-primary text-base-100 text-sm md:text-md">
-                        <p>Pour recharger, il suffit de suivre le lien ci-dessus. Il faudra ensuite soit vous créer un compte et le créditer, soit utiliser le rechargement rapide sans création de compte. Notez que pour vous faire rembourser le solde de votre bracelet, il vous faudra impérativement un compte! Votre compte n’est pas associé à votre compte bancaire, aucune transaction ne sera faite sans votre accord.</p>
+                        <p>Pour recharger, il suffit de suivre le lien ci-dessus. Il faudra ensuite soit vous créer un compte et le créditer, soit utiliser le rechargement rapide sans création de compte. Notez que pour vous faire rembourser le solde de votre bracelet, il vous faudra impérativement un compte! Votre compte n&apos;est pas associé à votre compte bancaire, aucune transaction ne sera faite sans votre accord.</p>
                     </div>
                 </div>
                 <div className="collapse collapse-arrow bg-primary shadow-xl hover:bg-primary/90 transition-colors duration-300">
                     <input type="checkbox" />
                     <div className="collapse-title text-lg md:text-1xl font-bold text-base-100">
-                        Que sont les frais d'activation?
+                        Que sont les frais d&apos;activation?
                     </div>
                     <div className="collapse-content bg-primary text-base-100 text-sm md:text-md">
-                        <p>À l’activation de chaque bracelets, 5 CHF seront facturés. Ceux si servent à couvrir les coûts des bracelets et du festival. Pour plus d’informations, n’hésitez pas à nous écrire à <a href="mailto:info@unilive.ch" className="link link-secondary">info@unilive.ch</a>.</p>
+                        <p>À l’activation de chaque bracelets, 5 CHF seront facturés. Ceux si servent à couvrir les coûts des bracelets et du festival. Pour plus d&apos;informations, n&apos;hésitez pas à nous écrire à <a href="mailto:info@unilive.ch" className="link link-secondary">info@unilive.ch</a>.</p>
                     </div>
                 </div>
                 <div className="collapse collapse-arrow bg-primary shadow-xl hover:bg-primary/90 transition-colors duration-300">
                     <input type="checkbox" />
                     <div className="collapse-title text-lg md:text-1xl font-bold text-base-100">
-                        J'ai perdu mon bracelet, que faire?
+                        J&apos;ai perdu mon bracelet, que faire?
                     </div>
                     <div className="collapse-content bg-primary text-base-100 text-sm md:text-md">
                         <p>Il faut bloquer votre bracelet en allant aux stands cashless présents le soir du festival. On vous en redonnera un nouveau.</p>
@@ -85,7 +85,7 @@ export default function Cashless() {
                 <div className="collapse collapse-arrow bg-primary shadow-xl hover:bg-primary/90 transition-colors duration-300">
                     <input type="checkbox" />
                     <div className="collapse-title text-lg md:text-1xl font-bold text-base-100">
-                        J'ai ajouté de l'argent qui n'apparaît pas, que faire?
+                        J&apos;ai ajouté de l&apos;argent qui n&apos;apparaît pas, que faire?
                     </div>
                     <div className="collapse-content bg-primary text-base-100 text-sm md:text-md">
                         <p>Il y aura deux stands cashless présent sur le site le soir du festival, venez nous visiter et nous résoudrons ce problème ensemble!</p>

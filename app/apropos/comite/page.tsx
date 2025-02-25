@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export default function Commitee() {
     return (
         <>
 
             <div className="breadcrumbs text-sm">
                 <ul>
-                    <li><a href="/">Unilive</a></li>
-                    <li><a href="/apropos">A propos</a></li>
+                    <li><Link href="/">Unilive</Link></li>
+                    <li><Link href="/apropos">A propos</Link></li>
                     <li>Le comité</li>
                 </ul>
             </div>

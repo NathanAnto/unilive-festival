@@ -18,7 +18,7 @@ export default function CashlessProcess() {
                     </div>
                     <div className="timeline-start mb-10 md:text-end">
                         <div className="text-lg text-primary font-black">1. Créer un compte</div>
-                        Étape optionnelle mais nécessaire si vous souhaitez récupérer le solde du bracelet après l’événement. Utilisez la boite ci-dessus pour vous créer un compte.
+                        Étape optionnelle mais nécessaire si vous souhaitez récupérer le solde du bracelet après l&apos;événement. Utilisez la boite ci-dessus pour vous créer un compte.
                     </div>
                     <hr className="bg-primary" />
                 </li>
@@ -38,7 +38,7 @@ export default function CashlessProcess() {
                     </div>
                     <div className="timeline-end md:mb-10">
                         <div className="text-lg text-primary font-black">2. Récupérer le bracelet</div>
-                        À l’entrée du festival, vous recevrez un bracelet. Il faudra le mettre à votre poignet et le garder toute la soirée. 
+                        À l&apos;entrée du festival, vous recevrez un bracelet. Il faudra le mettre à votre poignet et le garder toute la soirée. 
                     </div>
                     <hr className="bg-primary" />
                 </li>
@@ -98,7 +98,7 @@ export default function CashlessProcess() {
                     </div>
                     <div className="timeline-start mb-10 md:text-end">
                         <div className="text-lg text-primary font-black">5. Vérifier le solde du bracelet et le recharger</div>
-                        Sur votre espace client vous pouvez avoir accès à vos transactions ainsi qu’au solde du bracelet. Vous pouvez également le recharger.
+                        Sur votre espace client vous pouvez avoir accès à vos transactions ainsi qu&apos;au solde du bracelet. Vous pouvez également le recharger.
                     </div>
                     <hr className="bg-primary" />
                 </li>

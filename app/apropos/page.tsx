@@ -5,7 +5,7 @@ export default async function About() {
         <div>
            <div className="breadcrumbs text-sm">
                 <ul>
-                    <li><a href="/">Unilive</a></li>
+                    <li><Link href="/">Unilive</Link></li>
                     <li>A propos</li>
                 </ul>
             </div>
@@ -38,7 +38,7 @@ export default async function About() {
 
             <div className="flex flex-col items-center gap-8 py-12">
                 <Link href="/apropos/association" className="btn btn-primary btn-wide text-xl">
-                    L'association
+                    L&apos;association
                 </Link>
                 <Link href="/apropos/comite" className="btn btn-primary btn-wide text-xl">
                     Le comité
