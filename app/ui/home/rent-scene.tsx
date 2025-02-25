@@ -37,9 +37,11 @@ export default function RentScene() {
                     <p className='py-6'>
                         On offre la possibilité de louer et de monter la scène. Vous pouvez voir nos scènes disponibles ci dessous. Pour plus d&apos;informations, contactez-nous par email !
                     </p>
-                    <button className='btn btn-primary animate-bounce'>
-                        Voir les scènes disponibles
-                    </button>
+                    <a href="/info#scenes">
+                        <button className='btn btn-primary animate-bounce'>
+                            Voir les scènes disponibles
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -34,7 +34,7 @@ export default function SceneFAE() {
                     className='max-w-xs rounded-lg shadow-2xl'
                 />
                 <div>
-                    <h1 className='text-3xl sm:text-4xl font-bold text-primary'>
+                    <h1 className='text-2xl sm:text-3xl font-bold text-primary'>
                         Scène FAE
                     </h1>
                     <p className='py-6'>
@@ -58,12 +58,27 @@ export default function SceneFAE() {
                     <p>
                         Iels proposent entre autre :
                     </p>
-                    <ul className="list-disc list-inside">
-                        <li>Un service d’aide juridique</li>
-                        <li>Des subventions pour les associations thématiques</li>
-                        <li>Le don du sang chaque semestre</li>
-                        <li>Le vin chaud en décembre</li>
-                        <li>Un lieu pour troquer tes anciennes affaires</li>
+                    <ul className="list-none ">
+                        <li className="flex items-center gap-2">
+                            <span className="text-primary">✦</span>
+                            Un service d’aide juridique
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-primary">✦</span>
+                            Des subventions pour les associations thématiques
+                        </li>                           
+                        <li className="flex items-center gap-2">
+                            <span className="text-primary">✦</span>
+                            Le don du sang chaque semestre
+                        </li>                        
+                        <li className="flex items-center gap-2">
+                            <span className="text-primary">✦</span>
+                            Le vin chaud en décembre
+                        </li>                        
+                        <li className="flex items-center gap-2">
+                            <span className="text-primary">✦</span>
+                            Un lieu pour troquer tes anciennes affaires
+                        </li>
                     </ul>
                     <p>
                         Iels défendent aussi vos intérêts face à la Direction ou envers le Canton pour des questions de bourses d’étude.

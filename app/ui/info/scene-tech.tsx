@@ -33,7 +33,7 @@ export default function SceneTech() {
                     className='max-w-xs rounded-lg shadow-2xl'
                 />
                 <div>
-                    <h1 className='text-3xl sm:text-4xl font-bold text-primary'>
+                    <h1 className='text-2xl sm:text-3xl font-bold text-primary'>
                         Scène Tech
                     </h1>
                     <p className='py-6'>

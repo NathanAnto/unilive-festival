@@ -49,7 +49,9 @@ export default function Commitee() {
                     <p className='py-6'>
                         Voila une petite vidéo de présentation de notre comité !
                     </p>
-                    <button className='btn btn-primary animate-bounce'>Équipe Unilive</button>
+                    <a href="/apropos/comite">
+                        <button className='btn btn-primary animate-bounce'>Équipe Unilive</button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -49,12 +49,12 @@ export default function Events() {
         <div className="hero bg-base-200 min-h-[50vh]">
             <div ref={ref} className="hero-content text-center opacity-0">
                 <div className="max-w-4xl">
-                    <h2 className="text-5xl font-bold text-primary mb-12">Prochains événements</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-12">Prochains événements</h2>
                     <div className="grid gap-6 w-full">
                         {events.map((e) => (
                             <div key={e.title} className="collapse collapse-arrow bg-primary shadow-xl hover:bg-primary/90 transition-colors duration-300">
                                 <input type="radio" name="events" /> 
-                                <div className="collapse-title text-2xl font-bold text-base-100">
+                                <div className="collapse-title text-2xl md:text-3xl font-bold text-base-100">
                                     {e.title}
                                 </div>
                                 <div className="collapse-content bg-primary text-base-100">

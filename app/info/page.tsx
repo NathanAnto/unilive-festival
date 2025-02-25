@@ -9,10 +9,12 @@ export default function Info() {
     return (
         <div>
             <div className="relative">
-                <video src="/videos/intro.mp4"
-                    autoPlay loop muted
-                    className="w-full h-screen object-cover sticky top-0 left-0 -z-10">
-                </video>
+                <div className="relative">
+                    <img src="/images/bgs/img3.jpg"
+                        alt="Background"
+                        className="w-full h-screen object-cover sticky top-0 left-0 -z-10" />
+                    <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-base-100 to-transparent"></div>
+                </div>
                 <h1 className="flex flex-row justify-center py-24 mt-32 text-5xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl">
                     Info Pratiques
                 </h1>
@@ -155,7 +157,7 @@ export default function Info() {
 
             <br />
 
-            <h2 className='text-5xl font-bold text-primary mb-8'>Nos Scènes</h2>
+            <h2 id="scenes" className='text-4xl md:text-5xl font-bold text-primary mb-8'>Nos Scènes</h2>
 
             <SceneFAE />
             <SceneTech />
